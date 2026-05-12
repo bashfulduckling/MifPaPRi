@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact the Mindanao Institute for Peace and Policy Research">
-    <title>Contact - Mindanao Institute</title>
+    <title>Contact - Mindanao Institute for Peace and Policy Research</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-    <img src="../images/logo.png" alt="Logo" class="logo">
-</div>
+                <img src="../images/logo.png" alt="Logo" class="logo">
+            </div> 
             <ul class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="what-we-do.html">What We Do</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="what-we-do.html">What We Do</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="get-involved.html">Get Involved</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,106 +31,129 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Mindanao Institute for Peace and Policy Research</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>Get in touch with the Mindanao Institute</p>
-        </div>
-    </section>
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@mindanaoinsitute.org">info@mindanaoinsitute.org</a></p>
+                        </div>
+                    </div>
 
-    <!-- Content -->
-    <section class="page-content">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 50px;">
-            <!-- Contact Info -->
-            <div>
-                <h2>Contact Information</h2>
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Contact Number</h3>
+                            <p><a href="tel:+63975237778">+63 975 237 778</a></p>
+                        </div>
+                    </div>
 
-                <h3>Email</h3>
-                <p>
-                    <a href="mailto:info@mindanaoinsitute.org">info@mindanaoinsitute.org</a>
-                </p>
+                    <!-- Facebook -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Facebook</h3>
+                            <p><a href="https://facebook.com/mindanaoinsitute" target="_blank">Mindanao Institute for Peace and Policy Research</a></p>
+                        </div>
+                    </div>
 
-                <h3>Location</h3>
-                <p>
-                    Mindanao Institute for Peace and Policy Research<br>
-                    Mindanao, Southern Philippines
-                </p>
+                    <!-- Location -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Location</h3>
+                            <p>Mindanao, Southern Philippines</p>
+                        </div>
+                    </div>
 
-                <h3>Phone</h3>
-                <p>
-                    Available upon request
-                </p>
+                    <!-- Office Hours -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM (Philippine Standard Time)</p>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Social Media</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                </ul>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organization</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                        </div>
 
-                <h3>Office Hours</h3>
-                <p>
-                    Monday - Friday: 8:00 AM - 5:00 PM<br>
-                    Saturday & Sunday: Closed
-                </p>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Contact Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interested">I am interested in...</label>
+                            <select id="interested" name="interested">
+                                <option value="">-- Select an option --</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="workshops">Joining Workshops</option>
+                                <option value="collaboration">Research Collaboration</option>
+                                <option value="mentorship">Mentorship Program</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    </form>
+                </div>
             </div>
-
-            <!-- Contact Form -->
-            <div>
-                <h2>Send us a Message</h2>
-                <form onsubmit="handleFormSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a subject</option>
-                            <option value="collaboration">Collaboration Inquiry</option>
-                            <option value="training">Training Request</option>
-                            <option value="mentorship">Mentorship Inquiry</option>
-                            <option value="publication">Publication Question</option>
-                            <option value="event">Event Registration</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Message</button>
-                </form>
-            </div>
         </div>
-
-        <h2>Frequently Asked Questions</h2>
-
-        <h3>How long does it take to respond to inquiries?</h3>
-        <p>We typically respond to all inquiries within 2-3 business days. During peak periods, it may take up to one week.</p>
-
-        <h3>How can I request a training workshop?</h3>
-        <p>Please use the contact form above and select "Training Request" as your subject. Include details about your organization, the topic you're interested in, and your preferred dates.</p>
-
-        <h3>Can I apply for mentorship?</h3>
-        <p>Yes! We offer mentorship to early-career researchers. Contact us through the form above with information about your research interests and career goals.</p>
-
-        <h3>How can I collaborate with the Institute?</h3>
-        <p>We welcome research partnerships, joint projects, and institutional collaborations. Please <a href="work-with-us.html">visit our Work With Us page</a> for more details, or contact us directly.</p>
-
-        <h3>Where can I find your publications?</h3>
-        <p>Our publications are available on our <a href="publications.html">Publications page</a>. For specific papers or reports, you can also contact us directly.</p>
-
-        <h3>Do you offer internships?</h3>
-        <p>Yes, we offer internship opportunities for graduate students and advanced undergraduates. Contact us for current opportunities and application requirements.</p>
     </section>
 
     <!-- Footer -->
@@ -148,8 +169,8 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="activities.html">Activities</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

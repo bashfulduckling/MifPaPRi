@@ -1,4 +1,26 @@
 // ============================================
+// ACTIVE PAGE HIGHLIGHT
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        
+        // Check if link matches current page
+        if (currentPage.includes(linkPage) || 
+            (currentPage.endsWith('/') && linkPage === 'index.html') ||
+            (currentPage.endsWith('index.html') && linkPage === 'index.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+
+// ============================================
 // MOBILE MENU TOGGLE
 // ============================================
 
