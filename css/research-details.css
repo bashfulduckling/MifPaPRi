@@ -1,0 +1,112 @@
+/* =========================
+   Research Detail Page
+========================= */
+
+.research-detail-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.research-detail-card {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Badge */
+
+.research-badge {
+    display: inline-block;
+    background: #e8f1ff;
+    color: #1268d6;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* Header */
+
+.research-detail-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.research-detail-header h1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #0b3d75;
+    font-size: 3.3rem;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+/* Main Image */
+
+.research-main-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+/* Article Content */
+
+.research-article-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.research-article-content p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-bottom: 28px;
+}
+
+.research-article-content strong {
+    color: #0b3d75;
+    font-weight: 700;
+}
+
+/* Optional Drop Cap */
+
+.research-article-content p:first-child::first-letter {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1268d6;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .research-detail-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .research-main-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .research-detail-section {
+        padding: 60px 20px;
+    }
+
+    .research-detail-header h1 {
+        font-size: 2rem;
+    }
+
+    .research-main-image {
+        height: 300px;
+    }
+
+    .research-article-content p {
+        font-size: 1rem;
+    }
+}
