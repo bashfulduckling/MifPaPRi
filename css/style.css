@@ -666,6 +666,20 @@ section h2 {
     text-align: center;
 }
 
+.service-card p:last-child {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.service-card:hover p:last-child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ============================================
    VALUES SECTION
    ============================================ */
